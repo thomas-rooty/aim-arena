@@ -5,7 +5,11 @@ import Crosshair from "@/components/pointer/Crosshair";
 const Home = () => {
   return (
     <div className={styles.canvas}>
-      <Crosshair />
+      <Crosshair
+        size={50}
+        color="red"
+        thickness={2}
+      />
       <Scene />
     </div>
   )
