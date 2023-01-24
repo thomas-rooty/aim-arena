@@ -5,6 +5,7 @@ import { PointerLockControls } from "@react-three/drei";
 const Controls = () => {
   const controlsRef = useRef<any>();
   const isLocked = useRef(false);
+  let canJump = true;
   const [moveForward, setMoveForward] = useState(false);
   const [moveBackward, setMoveBackward] = useState(false);
   const [moveLeft, setMoveLeft] = useState(false);
@@ -45,10 +46,6 @@ const Controls = () => {
         setMoveRight(true);
         break;
 
-      // case "Space":
-      //   if (canJump === true) velocity.y += 350;
-      //   canJump = false;
-      //   break;
       default:
         return;
     }
