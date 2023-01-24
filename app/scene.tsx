@@ -1,6 +1,6 @@
 'use client'
 import { Canvas } from '@react-three/fiber'
-import Controls from "@/utils/Controls";
+import FpsView from "@/utils/fpsView";
 
 const Scene = () => {
   return (
@@ -10,7 +10,7 @@ const Scene = () => {
       <color attach="background" args={["lightblue"]} />
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <Controls />
+      <FpsView />
       <mesh>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial color="hotpink" />
