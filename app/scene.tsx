@@ -7,7 +7,7 @@ const Scene = () => {
     <Canvas
       camera={{ position: [-1, 1, 5], fov: 65 }}
     >
-      <color attach="background" args={["lightblue"]} />
+      <color attach="background" args={["lightyellow"]} />
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <FpsView />
